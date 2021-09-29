@@ -1,0 +1,30 @@
+body {
+	background-color: #FFB6C1;
+	font-family: "Lucida Sans Unicode", "Verdana", sans-serif, Arial;
+	font-size: 20px;
+}
+
+p::first-letter {
+  float: left;
+  font-size: 30px;
+  line-height: 0.80;
+}
+
+.emphasized {
+	font-weight: 600;
+	color: #FF1493;
+}
+div {
+	padding: 3px;
+}
+
+a {
+	font-weight: 600;
+	color: #FF69B4;
+	text-decoration: none; 
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
