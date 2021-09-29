@@ -1,0 +1,80 @@
+html {
+	max-height: -webkit-fill-available;
+}
+body {
+	background-image: url("./background.png");
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.inline-box {
+	display: flex;
+}
+
+.bannerbg {
+	background-image: url('./bannerbg.png');
+	width: -webkit-fill-available;
+	height: 50px;
+}
+
+.movie-name-header {
+	font-size: 24pt;
+	font-family:  Tahoma, Verdana, sans-serif;
+	text-shadow: 3px 3px #999999;
+	text-align: center;
+}
+
+.validator-links {
+	float: right;
+	position: relative;
+	bottom: 60px;
+}
+
+.overview {
+	width: 800px;
+	overflow: hidden;
+	display: flex;
+	border: 4px solid gray;
+	border-radius: 20px;
+	margin: auto;
+	flex-direction: column;
+}
+
+.movie-rating > span {
+	font-size: 48pt;
+	font-weight: 600;
+	color: red;
+	position: absolute;
+	left: 32%;
+}
+
+.rbg {
+	background-image: url('./rbg.png');
+	width: -webkit-fill-available;
+	height: initial;
+}
+
+.movie-photo > img {
+	position: relative;
+	bottom: 83px;
+	float: right;
+}
+
+.movie-photo {
+	order: 1;
+}
+
+.movie-reviewes {
+	order: 2;
+}
+
+.movie-description {
+	order: 4;
+}
+
+.box {
+	flex-basis: calc(50% - 20px);
+    margin: 10px; 
+}
