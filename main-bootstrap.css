@@ -1,0 +1,49 @@
+.main {
+    font-size: 18pt;
+    max-width: -webkit-fill-available !important;
+}
+
+.header {
+    padding: 16px;
+    font-size: 20pt;
+    background-color: lightblue;
+    font-weight: 600;
+    justify-content: space-around;
+}
+
+.columns > * {
+    height: 100px;
+}
+
+.menus {
+    background-color: #1b4d3e;
+}
+.menus > * {
+    color: white;
+    border-right: 1px solid black;
+}
+.footer {
+    padding: 16px;
+    font-size: 20pt;
+    color: white;
+    justify-content: space-around;
+    background-color: #1b4d3e;
+    justify-content: space-around;
+}
+
+.column1 {
+    background-color: darkgray;
+}
+.column2 {
+    background-color: #c0c0c0;
+}
+
+.column3 {
+    background-color: #e5e4e2;
+}
+
+@media (max-width: 575px) {
+    .column2 {
+        order: 3;
+    }
+}
