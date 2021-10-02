@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="javascripts.js"></script>
+    <script>
+
+function myFunctionTest(expected, found) {
+  if (expected === found) {
+    return "TEST SUCCEEDED";
+  } else {
+    return "TEST FAILED.  Expected " + expected + " found " + found;
+  }
+}
+
+console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
+console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, maxOfThree(5, 4, 44)));
+console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55, maxOfThree(55, 4, 44)));
+
+console.log("Expected output of isVowel('if') is true  " + myFunctionTest(true, isVowel('i')));
+console.log("Expected output of isVowel('k') is false  " + myFunctionTest(false, isVowel('k')));
+console.log("Expected output of isVowel('if') is  wrong input  " + myFunctionTest(" wrong input", isVowel('if')));
+
+console.log("Expected output of sum([1, 2, 0, 3]) is 6  " + myFunctionTest(6, sum([1, 2, 0, 3])));
+
+console.log("Expected output of multiplies([0, 1, 2]) is 0 " + myFunctionTest(0, multiplies([0, 1, 2])));
+
+console.log("Expected output of reverse(pretty) is ytterp " + myFunctionTest("ytterp", reverse("pretty")));
+
+console.log("Expected output of findLongestWord([happy, theater, scene]) is theater " + myFunctionTest("theater", findLongestWord(["happy", "theater", "scene"])));
+
+console.log("Expected output of filterLongWords([happy, theater, cup], 5) is happy " + myFunctionTest("theater,cup", filterLongWords(["happy", "theater", "cup"], 5)));
+
+</script>
+</head>
+<body>
+
+Look in the Chrome developer console to see the output. CTRL_SHIFT_J <br />
+Or on Firefox with CTRL_SHIFT_K
+
+<br/>
+<a href="index.html">Home</a>
+</body>
+</html>
