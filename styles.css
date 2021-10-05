@@ -1,0 +1,20 @@
+.simple-form {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.no-space {
+    justify-content: flex-start !important;
+}
+
+.no-space > a:nth-child(3) {
+    flex: auto;
+}
+
+.buttons > *{
+    margin: .5rem .9rem;
+}
